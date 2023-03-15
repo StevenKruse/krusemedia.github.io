@@ -1,0 +1,133 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.section--hero {
+    background-color: #f5f5f5;
+    background-image: url('https://www.tesla.com/ns_videos/commerce/content/dam/tesla/Lifestyle/Model%20Y/2021/06/24/MY_Social_3qtr_front.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section--hero h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.section--hero p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.section--hero a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.section--hero a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.section--features {
+    background-color: #fff;
+}
+
+.section--features h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.section--features ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.section--features li {
+    width: 30%;
+}
+
+.section--features h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section--features p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section--hero h2 {
+        font-size: 3rem;
+    }
+
+    .section--hero p {
+        font-size: 1.4rem;
+    }
+
+    .section--features ul {
+        flex-direction: column;
+    }
+
+    .section--features li {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .section--features h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section--features p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+}
